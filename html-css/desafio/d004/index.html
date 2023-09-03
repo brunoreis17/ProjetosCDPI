@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 9</title>
+    <link rel="shortcut icon" href="Graphics-Vibe-Developer-Html.256.png" type="image/x-icon">
+</head>
+<body>
+    <h1>O que vamos aprender hoje?</h1>
+    <h1>Animações</h1>
+<h2>Folhas de imagem | Sprites</h2>
+<p>As folhas de imagem,
+sprites ou atlas de textura
+são imagens que carregam
+vários frames ou imagens
+em um único arquivo. Elas
+podem ser usadas tanto
+para animações quanto
+para imagens estáticas.<p>
+<h2>Configuração das sprites</h2>
+<p>No design de jogos e apps, onde os dispositivos têm memória
+limitada, geralmente é essencial conservar essa memória usando
+folhas de imagem. Na maioria dos casos, é mais eficiente
+consolidar várias imagens menores em uma folha maior e puxar
+alguma delas da folha quando quisermos exibi-la na tela.
+            
+Configuração das sprites
+            
+Para incluir uma nova sprite no nosso script precisamos de
+duas informações iniciais, que são o arquivo da sprite e uma
+tabela de opções que informa ao Corona sobre os frames que
+contém na folha da sprite.
+            
+Alguns softwares de empacotamento de imagens já fornecem
+            
+a segunda informação automaticamente.</p>
+<h2>Exibindo imagens na tela</h2>
+<p>Para exibir um frame de uma sprite, utilizamos o
+
+comando padrão de inclusão com as informações da sprite
+incluídas anteriormente.</p>
+<h2>Métodos de controle</h2>
+<p>A biblioteca de sprites fornece 4 métodos de controle primários que
+podem ser usados para controlar a reprodução de sprites, que são:</p>
+<li>variavel:play () - Inicia a animação usando a sequência padrão
+ou definida. Sprites não começam a ser reproduzidas
+automaticamente quando a criamos, então precisamos iniciá-los com este comando.</li>
+<li>variavel:pause() - Pausa a animação.</li>
+<li>variavel:setFrame() - Pule ou defina imediatamente um índice
+de quadro indicado dentro da sequência atual.</li>
+<li>variavel:setSequence() - Defina qual a sequência de sprite que
+será executada.</li>
+<h2>Propriedades</h2>
+<li>variavel.frame - Somente leitura. Representa o índice mostrado
+atualmente da sequência carregada. Não configura o quadro.</li>
+<li>variavel.isPlaying - Valor booleano, se true a animação está
+sendo reproduzida, se false, não.</li>
+<Li>variavel.numFrames - Somente leitura para representar a
+quantidade de quadros na sequência de animação atual.</Li>
+<li>variavel.sequence - Somente leitura que indica o nome da
+sequencia de animação atual.</li>
+<li>variavel.timeScale - Obtém ou define a escala aplicada ao
+tempo de animação, podendo ajustar a velocidade de animação
+de uma sprite dinâmicamente.</li>
+
+</body>
+</html>
