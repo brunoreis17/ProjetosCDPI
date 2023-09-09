@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+</head>
+<body>
+    <h1>Criando links externos</h1>
+    <a href="https://github.com/brunoreis17/"> Meu perfil no GitHub</a>
+<h2> Indentificando o idioma do site</h2>
+<a href="https://www.w3.org/TR/2014/REC-html5-20141028/obsolete.html" hreflang="en"> Tags Obsoletas (em ingles)</a>
+<h2> Abrindo links em novas guias</h2>
+<p>o paramentro target define o comportamento do link que o usuario vai abrir. entre os possiveis valores temos:
+    <ul>
+        <li>_blank: vai abrir o link em uma nova janela em branco</li>
+        <li>_self: vai abrir na janela atual(link)</li>
+        <li>_top: vai desfazer todos os frames e abrir no navegador completo</li>
+        <li>_parent: similiar ao _top</li>
+        <li>nome-do-frame: caso usamos o frames, indicar o nome da janela ao abrir.</li>
+    </ul>
+</p>
+<a href="https://github.com/brunoreis17/" target="_parent"> acesse meu GitHUb</a>
+<h2>esse link é seu?</h2>
+<p>podemos indicar a natureza do destino do link utilizando o parametro rel que aceita os seguintes valores:</p>
+<ul>
+    <li>next: indica que o link é a proxima paete do documento atual.</li>
+    <li>prev:indica que o link é a parte anterior do documento atual.</li>
+    <li>author: indica que é um link para o site do autor do artigo atual.</li>
+    <li>externo: indica um link externo</li>
+    <li>nofollow:indica que é um link para um site nao endossado, como um link pago.</li>
+
+</ul>
+<a href="pagina1.html" target="_self" rel="next">Pagina 1</a>
+<p>voce tambem pode acessar nossa <a href="noticias/pagina2.html" target="_target" rel="next"> pagina de noticias</a></p>
+<h2>Downloads</h2>
+<p>podemos adicionar arquivos de downloads</p>
+<a href="downloads/aula9.pdf" download="aula9.pdf" type="application/pdf">baixem o PPT da aula aqui</a>
+
+</body>
+</html>
