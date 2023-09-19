@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 11</title>
+    <style>
+        body{
+            background-color: rgb(127, 255, 178);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-style: italic;" >O que vamos aprender hoje?</h1>
+    <h2 style="font-family: cursive;">Animações</h2>
+    <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Folhas de imagem | Sprites</h3>
+    <p style="color: rgb(255, 0, 0); font-size: 1.2em;text-align: justify;">As folhas de imagem, sprites ou atlas de textura são imagens que carregam vários frames ou imagens em um único arquivo. Elas podem ser usadas tanto para animações quanto para imagens estáticas.</p>
+    <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Configuração das sprites</h3>
+    <p style="color: rgb(255, 0, 0); font-size:1.2em;text-align: justify;">No design de jogos e apps, onde os dispositivos têm memória limitada, geralmente é essencial conservar essa memória usando folhas de imagem. Na maioria dos casos, é mais eficiente consolidar várias imagens menores em uma folha maior e puxar alguma delas da folha quando quisermos exibi-la na tela. Configuração das sprites Para incluir uma nova sprite no nosso script precisamos de duas informações iniciais, que são o arquivo da sprite e uma tabela de opções que informa ao Corona sobre os frames que contém na folha da sprite. Alguns softwares de empacotamento de imagens já fornecem a segunda informação automaticamente.</p>
+    <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Exibindo imagens na tela</h3>
+    <p style="color: rgb(255, 0, 0); font-size: 1.2em;text-align: justify;">Para exibir um frame de uma sprite, utilizamos o comando padrão de inclusão com as informações da sprite incluídas anteriormente.</p>
+    <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Métodos de controle</h3>
+    <p style="color: rgb(255, 0, 0); font-size: 1.2em;text-align: justify;">A biblioteca de sprites fornece 4 métodos de controle primários que podem ser usados para controlar a reprodução de sprites, que são:
+        <ul>
+            <li style="font-family: Arial, Helvetica, sans-serif; font-style: italic;"><strong>Variavel:Play ( ):</strong>Inicia a animação usando a sequência padrão ou definida. Sprites não começam a ser reproduzidas automaticamente quando a criamos, então precisamos iniciá-los com este comando.</li>
+            <li style="font-family: Arial, Helvetica, sans-serif; font-style: italic;"><strong>Variavel:Pause( ): - </strong> Pausa a animação.</li>
+            <li style="font-family: Arial, Helvetica, sans-serif; font-style: italic;"><strong>Variavel:SetFrame( ): </strong> Pule ou defina imediatamente um índice de quadro indicado dentro da sequência atual.</li>
+            <li style="font-family: Arial, Helvetica, sans-serif; font-style: italic;"><strong>Variavel:SetSequence( ):</strong> Defina qual a sequência de sprite que será executada.</li>
+        </ul>
+    </p>
+    <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Propriedades</h3>
+    <p>
+        <ul>
+            <li style="font-family: Arial, Helvetica, sans-serif; font-style: italic;"><strong>Variavel.Frame: </strong>Somente leitura. Representa o índice mostrado atualmente da sequência carregada. Não configura o quadro.</li>
+            <li style="font-family: Arial, Helvetica, sans-serif; font-style: italic;"><strong>Variavel.IsPlaying: </strong>Valor booleano, se true a animação está sendo reproduzida, se false, não.</li>
+            <li style="font-family: Arial, Helvetica, sans-serif; font-style: italic;"><strong>Variavel.NumFrames: </strong> Somente leitura para representar a quantidade de quadros na sequência de animação atual.</li>
+            <li style="font-family: Arial, Helvetica, sans-serif; font-style: italic;"><strong>Variavel.Sequence: </strong> Somente leitura que indica o nome da sequencia de animação atual.</li>
+            <li style="font-family: Arial, Helvetica, sans-serif; font-style: italic;"><strong>Variavel.TimeScale: </strong>Obtém ou define a escala aplicada ao tempo de animação, podendo ajustar a velocidade de animação de uma sprite dinâmicamente.</li>
+        </ul>
+    </p>
+</body>
+</html>
