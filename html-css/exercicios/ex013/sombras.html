@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: #525252;
+            padding: 3px;
+            box-shadow: 2px 4px 2px 1px rgba(0, 0, 0, 0.666);
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            text-align: justify;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        article > aside {
+            background-color: #b4b3b3;
+            padding:5px;
+        }
+         footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+         }
+
+         footer > p {}
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+<h1> Meu site</h1>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Sobre nos</a>
+    <a href="#">contato</a>
+    <a href="#">Catalago</a>
+</nav>
+    </header>
+    <main> <!--Delimita o conteudo principal do site-->
+<section id="assuntos">
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur soluta placeat porro nisi odio voluptatibus ab similique reprehenderit voluptates ea eveniet fugiat, magnam, laborum tenetur blanditiis rerum saepe nostrum cum?</p>
+</section>
+<section id="Noticias">
+   <article> <!--Conteudo que pode ser lido de forma indepedente -->
+    <h2>Noticia sobre tecnologia</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit deleniti amet optio reiciendis perspiciatis cupiditate neque eum, commodi blanditiis suscipit laborum alias totam facilis accusantium quaerat, quo debitis magni dolorum?</p>
+    <aside>
+        <p>Conteudo relativo ao artigo como por ex o autor.</p>
+    </aside>
+   </article>
+</section>
+    </main>
+    <footer>
+        <p>Deselvolvido por Jose Bruno</p>
+    </footer>
+</body>
+</html>
