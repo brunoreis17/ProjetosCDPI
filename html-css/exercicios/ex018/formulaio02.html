@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ficha de inscriçao</title>
+</head>
+<body>
+    <h1>trabalhe conosco</h1>
+    <form action="processar.php" method="post">
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="seu nome completo" required>
+
+        <label for="endereco"> Endereço</label>
+        <input type="text" id="endereço" name="endereço" placeholder="seu bairro e cidade" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Seu email" required>
+
+        <label for="cpf"> CPF:</label>
+        <input type="text" name="cpf" id="cpf" placeholder="seu cpf" required pattern="\d{3}\.\d{3}\.\d{3}\--\d{2}" title="digite um cpf valido (ex: 123.456.789-01)">
+         <label for="data_nascimento"> data de nascimento</label>
+         <input type="date" id="data_nascimento" name="data_nascimento" required><br>
+
+         <label for="curriculo">carregar curriculo (pdf ou word)</label>
+         <input type="file" id="curriculo" name="curriculo" accept=".pdf, doc, docx" required>;
+
+         <button type="submit">enviar</button>
+
+</body>
+</html>
